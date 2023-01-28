@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --btn-square-size: 3rem;
+  }
+
+  a:where(:hover, :focus) {
+    @apply text-primary-300;
+  }
+
+  body {
+    @apply text-base text-primary-900 leading-[28px];
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  p + p {
+    @apply mt-4;
+  }
+}

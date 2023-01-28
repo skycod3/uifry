@@ -1,0 +1,37 @@
+.btn {
+  --transition: 0.3s ease;
+  --bg-color: rgb(0 0 0 / 0.1);
+
+  @apply inline-flex items-center justify-center capitalize px-5 py-3 font-bold rounded;
+  @apply border border-solid border-transparent;
+
+  background-color: var(--bg-color);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* modifiers */
+
+.btn.btn-square {
+  @apply aspect-square p-0;
+
+  width: var(--btn-square-size);
+  height: var(--btn-square-size);
+}
+
+/* theme */
+.btn.btn-primary {
+  @apply bg-primary text-white;
+}
+
+.btn.btn-secondary {
+  @apply bg-secondary text-primary;
+}
+
+.btn.btn-outline-secondary {
+  @apply bg-transparent border-secondary;
+}
+
+/* states */
+.btn.btn-secondary:is(a, button, [type="button"]):where(:hover, :focus) {
+  @apply bg-red-500 text-white;
+}

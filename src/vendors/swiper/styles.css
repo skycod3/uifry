@@ -1,0 +1,36 @@
+:root {
+  --swiper-theme-color: var(--color-primary-300);
+}
+
+/* pagination */
+.swiper-pagination.swiper-pagination-bullets {
+  @apply -bottom-7;
+}
+
+.swiper-pagination.swiper-pagination-bullets[data-hidden] {
+  @apply hidden;
+}
+
+/* navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 1rem;
+  --swiper-button-spacing: 1.25rem / 2;
+
+  width: var(--btn-square-size);
+  height: var(--btn-square-size);
+
+  @apply top-auto bottom-0 border border-solid border-secondary rounded;
+}
+
+.swiper-button-next {
+  right: calc(50% - var(--btn-square-size) - var(--swiper-button-spacing));
+}
+
+.swiper-button-prev {
+  left: calc(50% - var(--btn-square-size) - var(--swiper-button-spacing));
+}
+
+.swiper-navigation:has(> .swiper-button-lock) {
+  @apply hidden;
+}

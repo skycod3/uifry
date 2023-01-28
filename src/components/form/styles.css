@@ -1,0 +1,13 @@
+input:is([type="text"], [type="email"]) {
+  /* structure */
+  @apply min-h-[60px] w-full rounded border border-solid px-12;
+  /* theme */
+  @apply text-primary bg-white border-[#D0D0D0] placeholder:text-primary;
+}
+
+/* states */
+input:is([type="text"], [type="email"]):is(:focus) {
+  --tw-ring-color: var(--color-primary-900);
+
+  @apply placeholder:text-neutral-400;
+}

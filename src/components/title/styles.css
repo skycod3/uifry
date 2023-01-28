@@ -1,0 +1,7 @@
+.title {
+  --max-size: 2.4rem;
+
+  @apply font-bold leading-tight text-primary;
+
+  font-size: clamp(1.4rem, 2vw + 1rem, var(--max-size));
+}

@@ -1,0 +1,21 @@
+.nav-main {
+  @apply hidden nav-break:!block nav-break:!static nav-break:!bg-transparent nav-break:!transform-none;
+}
+
+.nav-main[aria-hidden="false"] {
+  @apply block absolute top-14 left-1/2 -translate-x-1/2 z-10 rounded p-4 bg-neutral-100;
+
+  width: min(80vw, 400px);
+}
+
+.nav-main ul {
+  @apply flex flex-col nav-break:flex-row gap-10 nav-break:gap-14;
+}
+
+.nav-main li {
+  @apply font-bold text-sm capitalize;
+}
+
+.nav-main-toggler button {
+  @apply nav-break:hidden;
+}

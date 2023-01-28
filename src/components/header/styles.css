@@ -1,0 +1,3 @@
+.header-main-contact {
+  @apply hidden lg:block;
+}

@@ -1,0 +1,63 @@
+/* 
+*
+* :: Default 
+*
+*/
+
+.even-columns {
+  @apply grid gap-5 items-start;
+  /* media */
+  @apply md:grid-cols-2;
+}
+
+.column-image-bg {
+  @apply absolute inset-0 w-[85%] top-4 -z-1 bg-[#F6F6F9] rounded;
+  /* media */
+  @apply md-down:mx-auto sm:left-0;
+}
+
+.column-image-img {
+  @apply translate-x-[10%];
+  /* media */
+  @apply md-down:w-[90%];
+}
+
+.image-chart {
+  @apply absolute z-1 bottom-[20%] left-0 w-[min(50%,241px)];
+  /* media */
+  @apply md:left-auto md:right-0;
+}
+
+.column-svg {
+  @apply translate-y-4;
+  /* media */
+  @apply lg-down:scale-[.65];
+}
+
+/* 
+*
+* :: Modifiers
+*
+*/
+
+.column-image-bg[data-bg="secondary"] {
+  @apply bg-secondary;
+}
+
+.column-image-bg[data-bg-position="right"] {
+  @apply left-auto;
+  /* media */
+  @apply md-down:left-0;
+}
+
+.column-image-img[data-img-x="none"] {
+  @apply translate-x-0;
+}
+
+.image-chart[data-chart-position-y="top"] {
+  @apply top-[20%] bottom-auto;
+}
+
+.image-chart[data-chart-position-x="left"] {
+  @apply left-0 right-auto;
+}
