@@ -7,12 +7,16 @@
     --btn-square-size: 3rem;
   }
 
-  a:where(:hover, :focus) {
-    @apply text-primary-300;
+  *:where(:focus-visible) {
+    @apply outline-2 outline-primary-300 outline-offset-4;
   }
 
   body {
     @apply text-base text-primary-900 leading-[28px];
+  }
+
+  a:where(:hover, :focus) {
+    @apply text-primary-300;
   }
 
   :is(h1, h2, h3, h4, h5, h6) {
@@ -21,5 +25,20 @@
 
   h3 {
     @apply text-2xl;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
