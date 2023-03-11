@@ -52,6 +52,9 @@ module.exports = {
         ".debug": {
           outline: "1px solid red",
         },
+        ".flow": {
+          "@apply [&>*+*]:mt-[var(--flow-space,_2em)]": {},
+        },
       });
     },
     ({ addBase, theme }) => {
