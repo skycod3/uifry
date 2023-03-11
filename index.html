@@ -1,61 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta name="description" content="Static landing page, developed by Jean Medeiros" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Uifry - Static Landing Page</title>
+    <%- include("head") %>
   </head>
 
   <body>
-    <header>
-      <div class="py-3 bg-primary-300 text-center">
-        <div class="container">
-          <p class="text-white text-sm">This is an announcement tagline for you to insert</p>
-        </div>
-      </div>
-
-      <div class="py-8 header-main">
-        <div class="container">
-          <div class="flex justify-between items-center">
-            <div class="flex gap-20 items-center flex-1 relative">
-              <a href="#">
-                <img src="/src/assets/logo.svg" width="113" height="36" alt="Uifry" />
-              </a>
-
-              <nav class="nav-main" aria-hidden="false">
-                <ul role="list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">Blog</a></li>
-                </ul>
-              </nav>
-
-              <div class="nav-main-toggler ml-auto">
-                <button type="button" aria-label="Toggle menu" class="btn btn-square btn-secondary">
-                  <img src="/src/assets/menu-button.svg" width="24" height="24" alt="Menu button toggler" />
-                </button>
-              </div>
-            </div>
-
-            <div class="header-main-contact">
-              <a href="#" class="btn btn-secondary">Contact Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <%- include("header") %>
 
     <main>
       <!-- hero (even-columns) -->
@@ -1058,82 +1008,7 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="py-10">
-          <!-- Sim, é um seletor avançado, mas não queria criar utilities só pra isso. -->
-          <div
-            class="lg:[&>.grid>*:nth-child(-n+2)]:pb-10 lg:[&>.grid>*:nth-child(-n+2)]:[border-bottom:1px_solid_var(--color-primary-900)]"
-          >
-            <div class="grid gap-y-10 grid-areas-footer-mobile lg:grid-areas-footer-desktop">
-              <!-- grid area logo -->
-              <div class="grid-in-logo">
-                <a href="#">
-                  <img src="/src/assets/logo.svg" width="113" height="36" alt="Uifry" />
-                </a>
-              </div>
-
-              <!-- grid area nav -->
-              <div class="grid-in-nav">
-                <nav class="text-sm font-bold flex justify-end">
-                  <ul role="list" class="flex flex-col lg:flex-row lg:justify-end gap-8 lg:gap-20">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
-
-              <!-- grid area copyright -->
-              <div class="grid-in-copyright">
-                <p class="text-center lg:text-left">
-                  All rights reserved &copy; uifry.com | Terms and conditions apply!
-                </p>
-              </div>
-
-              <!-- grid area socials -->
-              <div class="grid-in-socials">
-                <div class="flex justify-end">
-                  <ul class="flex flex-col lg:flex-row lg:justify-end gap-5">
-                    <li>
-                      <a rel="noopener" aria-label="Instagram" href="#">
-                        <img src="/src/assets/socials/instagram.svg" alt="Instagram" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a rel="noopener" aria-label="Flickr" href="#">
-                        <img src="/src/assets/socials/flickr.svg" alt="Flickr" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a rel="noopener" aria-label="Instagram" href="#">
-                        <img src="/src/assets/socials/instagram.svg" alt="Instagram" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a rel="noopener" aria-label="Pinterest" href="#">
-                        <img src="/src/assets/socials/pinterest.svg" alt="Pinterest" />
-                      </a>
-                    </li>
-
-                    <li>
-                      <a rel="noopener" aria-label="Twitter" href="#">
-                        <img src="/src/assets/socials/twitter.svg" alt="Twitter" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <%- include("footer") %>
 
     <script type="module" src="/src/main.ts"></script>
   </body>
