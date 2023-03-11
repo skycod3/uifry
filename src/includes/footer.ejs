@@ -1,0 +1,74 @@
+<footer>
+  <div class="container">
+    <div class="py-10">
+      <!-- Sim, é um seletor avançado, mas não queria criar utilities só pra isso. -->
+      <div
+        class="lg:[&>.grid>*:nth-child(-n+2)]:pb-10 lg:[&>.grid>*:nth-child(-n+2)]:[border-bottom:1px_solid_var(--color-primary-900)]"
+      >
+        <div class="grid gap-y-10 grid-areas-footer-mobile lg:grid-areas-footer-desktop">
+          <!-- grid area logo -->
+          <div class="grid-in-logo">
+            <a href="#">
+              <img src="/src/assets/logo.svg" width="113" height="36" alt="Uifry" />
+            </a>
+          </div>
+
+          <!-- grid area nav -->
+          <div class="grid-in-nav">
+            <nav class="text-sm font-bold flex justify-end">
+              <ul role="list" class="flex flex-col lg:flex-row lg:justify-end gap-8 lg:gap-20">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- grid area copyright -->
+          <div class="grid-in-copyright">
+            <p class="text-center lg:text-left">All rights reserved &copy; uifry.com | Terms and conditions apply!</p>
+          </div>
+
+          <!-- grid area socials -->
+          <div class="grid-in-socials">
+            <div class="flex justify-end">
+              <ul class="flex flex-col lg:flex-row lg:justify-end gap-5">
+                <li>
+                  <a rel="noopener" aria-label="Instagram" href="#">
+                    <img src="/src/assets/socials/instagram.svg" alt="Instagram" />
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" aria-label="Flickr" href="#">
+                    <img src="/src/assets/socials/flickr.svg" alt="Flickr" />
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" aria-label="Instagram" href="#">
+                    <img src="/src/assets/socials/instagram.svg" alt="Instagram" />
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" aria-label="Pinterest" href="#">
+                    <img src="/src/assets/socials/pinterest.svg" alt="Pinterest" />
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" aria-label="Twitter" href="#">
+                    <img src="/src/assets/socials/twitter.svg" alt="Twitter" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
